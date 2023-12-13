@@ -41,7 +41,7 @@ function clear() {
     count = 0;
     recalculate();
 }
-clear_button.addEventListener("click", clear)
+clear_button.addEventListener("click", clear);
 
 function half_day() {
     price_per_day = 20;
@@ -60,6 +60,7 @@ function full_day() {
 fullButton.addEventListener("click", full_day);
 
 function recalculate() {
-    totalPrice = price_per_day*count
-    total_amount.textContent = totalPrice
+    let totalPrice;
+    totalPrice = price_per_day*count;
+    total_amount.textContent = totalPrice;
 }
